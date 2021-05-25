@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="todoapp owl assets" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+
+                <!--components-->
+                <link rel="stylesheet" type="text/scss" href="/todoapp_owl/static/src/components/app/app.scss"/>
+                <link rel="stylesheet" type="text/scss" href="/todoapp_owl/static/src/components/task/task.scss"/>
+
+                <script type="text/javascript" src="/todoapp_owl/static/src/components/task/task.js"></script>
+                <script type="text/javascript" src="/todoapp_owl/static/src/components/app/app.js"></script>
+
+                <script type="text/javascript" src="/todoapp_owl/static/src/widget/todo.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

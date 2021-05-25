@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <menuitem
+                id="menu_root_toapp_owl"
+                name="Todo App - Owl"
+                groups="base.group_user"/>
+
+        <record id="action_toapp_owl_home" model="ir.actions.client">
+            <field name="name">Tracking App</field>
+            <field name="tag">todoapp_owl.home</field>
+        </record>
+
+        <menuitem
+                id="menu_toapp_owl_home"
+                name="Tracking App"
+                action="action_toapp_owl_home"
+                parent="menu_root_toapp_owl"
+                groups="base.group_user"
+                sequence="10"/>
+    </data>
+</odoo>

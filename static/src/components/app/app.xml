@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="todoapp_owl.app" owl="1">
+        <div class="todo-app">
+            <input placeholder="Enter a new task" t-on-keyup="addTask" t-ref="add-input"/>
+            <div class="task-list">
+                <Task t-foreach="displayedTasks" t-as="task" t-key="task.id" task="task"/>
+            </div>
+            <div class="task-panel" t-if="tasks.length">
+                <div class="task-counter">
+                    <t t-esc="displayedTasks.length"/>
+                    <t t-if="displayedTasks.length lt tasks.length">
+                        / <t t-esc="tasks.length"/>
+                    </t>
+                    task(s)
+                </div>
+                <div>
+                    <span t-foreach="['all', 'active', 'completed']"
+                        t-as="f" t-key="f"
+                        t-att-class="{active: filter.value===f}"
+                        t-on-click="setFilter(f)"
+                        t-esc="f"/>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

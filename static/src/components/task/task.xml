@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="todoapp_owl.task" owl="1">
+        <div class="task" t-att-class="props.task.isCompleted ? 'done' : ''">
+            <input type="checkbox" t-att-checked="props.task.isCompleted"
+                t-att-id="props.task.id"
+                t-on-click="dispatch('toggleTask', props.task.id)"/>
+            <label t-att-for="props.task.id"><t t-esc="props.task.title"/></label>
+            <span class="delete" t-on-click="dispatch('deleteTask', props.task.id)">🗑</span>
+        </div>
+    </t>
+
+</templates>

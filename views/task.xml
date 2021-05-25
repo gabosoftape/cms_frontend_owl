@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="todo_task_tree_view">
+            <field name="name">Tasks</field>
+            <field name="model">todo.task</field>
+            <field name="arch" type="xml">
+                <tree string="Tasks" editable="bottom">
+                    <field name="name"/>
+                    <field name="is_completed"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="open_todo_task_action">
+            <field name="name">Tasks</field>
+            <field name="res_model">todo.task</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first task</p>
+            </field>
+        </record>
+    </data>
+    <data>
+
+        <menuitem 
+            id="menu_todo_task"
+            parent="menu_root_toapp_owl"
+            action="open_todo_task_action"
+            sequence="5"/>
+    </data>
+</odoo>
