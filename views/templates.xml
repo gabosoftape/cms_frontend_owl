@@ -2,14 +2,17 @@
 <odoo>
     <data>
         <template id="assets_common" name="cms owl assets common" inherit_id="web.assets_common">
-            <!--components-->
-            <link rel="stylesheet" type="text/scss" href="/cms_frontend_owl/static/src/components/app/app.scss"/>
-            <link rel="stylesheet" type="text/scss" href="/cms_frontend_owl/static/src/components/task/task.scss"/>
+            <xpath expr="//script[last()]" position="after">
 
-            <script type="text/javascript" src="/cms_frontend_owl/static/src/components/task/task.js"></script>
-            <script type="text/javascript" src="/cms_frontend_owl/static/src/components/app/app.js"></script>
+                <!--components-->
+                <link rel="stylesheet" type="text/scss" href="/cms_frontend_owl/static/src/components/app/app.scss"/>
+                <link rel="stylesheet" type="text/scss" href="/cms_frontend_owl/static/src/components/task/task.scss"/>
 
-            <script type="text/javascript" src="/cms_frontend_owl/static/src/widget/todo.js"></script>
+                <script type="text/javascript" src="/cms_frontend_owl/static/src/components/task/task.js"></script>
+                <script type="text/javascript" src="/cms_frontend_owl/static/src/components/app/app.js"></script>
+
+                <script type="text/javascript" src="/cms_frontend_owl/static/src/widget/todo.js"></script>
+            </xpath>
         </template>
     </data>
 </odoo>
