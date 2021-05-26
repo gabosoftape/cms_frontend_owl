@@ -33,7 +33,7 @@
                 <t t-set="body_classname" t-value="'bg-100'"/>
                 <t t-set="no_header" t-value="True"/>
                 <t t-set="no_footer" t-value="True"/>
-
+                <t t-set="x_icon" t-value="/motion_web_contact/static/src/ico/favicon.ico"/>
                 <div class="container py-5">
                     <App></App>
                 </div>
