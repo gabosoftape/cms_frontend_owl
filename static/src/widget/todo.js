@@ -1,4 +1,4 @@
-odoo.define('todoapp_owl.home', function (require) {
+odoo.define('cms_frontend_owl.home', function (require) {
     "use strict";
 
     var AbstractAction = require('web.AbstractAction');
@@ -15,7 +15,7 @@ odoo.define('todoapp_owl.home', function (require) {
     }
 
     const components = {
-        App: require('todoapp_owl/static/src/components/app/app.js'),
+        App: require('cms_frontend_owl/static/src/components/app/app.js'),
     };
 
     async function fetch_task_list() {
@@ -84,7 +84,7 @@ odoo.define('todoapp_owl.home', function (require) {
 
 
     var TodoAppHome = AbstractAction.extend(WidgetAdapterMixin, {
-        template: 'todoapp_owl.home',
+        template: 'cms_frontend_owl.home',
 
         /**
          * @override
@@ -129,7 +129,7 @@ odoo.define('todoapp_owl.home', function (require) {
         },
     });
 
-    core.action_registry.add('todoapp_owl.home', TodoAppHome);
+    core.action_registry.add('cms_frontend_owl.home', TodoAppHome);
 
     return TodoAppHome;
 

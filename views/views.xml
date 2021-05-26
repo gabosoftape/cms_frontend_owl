@@ -7,7 +7,7 @@
 
         <record id="action_toapp_owl_home" model="ir.actions.client">
             <field name="name">Tracking App</field>
-            <field name="tag">todoapp_owl.home</field>
+            <field name="tag">cms_frontend_owl.home</field>
         </record>
 
         <menuitem

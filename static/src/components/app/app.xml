@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
 
-    <t t-name="todoapp_owl.app" owl="1">
+    <t t-name="cms_frontend_owl.app" owl="1">
         <div class="todo-app">
             <input placeholder="Enter a new task" t-on-keyup="addTask" t-ref="add-input"/>
             <div class="task-list">

@@ -1,4 +1,4 @@
-odoo.define('todoapp_owl/static/src/components/app/app.js', function (require) {
+odoo.define('cms_frontend_owl/static/src/components/app/app.js', function (require) {
     'use strict';
 
     // const useStore = require('mail/static/src/component_hooks/use_store/use_store.js');
@@ -7,7 +7,7 @@ odoo.define('todoapp_owl/static/src/components/app/app.js', function (require) {
     const {useRef, useDispatch, useStore, useState} = owl.hooks;
 
     const components = {
-        Task: require('todoapp_owl/static/src/components/task/task.js')
+        Task: require('cms_frontend_owl/static/src/components/task/task.js')
     };
 
     class App extends Component {
@@ -56,7 +56,7 @@ odoo.define('todoapp_owl/static/src/components/app/app.js', function (require) {
     Object.assign(App, {
         components,
         props: {},
-        template: 'todoapp_owl.app',
+        template: 'cms_frontend_owl.app',
     });
 
     return App;

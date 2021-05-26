@@ -1,4 +1,4 @@
-odoo.define('todoapp_owl/static/src/components/task/task.js', function (require) {
+odoo.define('cms_frontend_owl/static/src/components/task/task.js', function (require) {
     'use strict';
 
     const {Component} = owl;
@@ -22,7 +22,7 @@ odoo.define('todoapp_owl/static/src/components/task/task.js', function (require)
         props: {
             task: Object,
         },
-        template: 'todoapp_owl.task',
+        template: 'cms_frontend_owl.task',
     });
 
     return Task;

@@ -16,6 +16,6 @@ class TodoappOwl(http.Controller):
 
     @http.route('/todoapp/', auth='public')
     def object(self, **kw):
-        return http.request.render('todoapp-owl.home', {
+        return http.request.render('todoapp_owl.home', {
             'home': "obj"
         })
