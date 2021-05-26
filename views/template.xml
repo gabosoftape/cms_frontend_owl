@@ -9,12 +9,37 @@
             <t t-call-assets="web.assets_frontend" t-js="false"/>
         </xpath>
         <xpath expr="//head/script" position="after">
-            <t t-call-assets="web.assets_backend" t-css="false"/>
             <t t-call-assets="web.assets_common_minimal_js" t-css="false" defer_load="True"/>
             <t t-call-assets="web.assets_frontend_minimal_js" t-css="false" defer_load="True"/>
             <t t-call="web.conditional_assets_tests"/>
             <t t-call-assets="web.assets_common_lazy" t-css="false" lazy_load="True"/>
             <t t-call-assets="web.assets_frontend_lazy" t-css="false" lazy_load="True"/>
+            <script type="text/javascript" src="/web/static/src/js/core/domain.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/core/mvc.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/core/py_utils.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/chrome/abstract_action.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/chrome/action_manager.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/chrome/action_manager_act_window.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/chrome/action_manager_report.js"/>
+            <script type="text/javascript" src="/web/static/src/js/chrome/action_mixin.js"/>
+            <script type="text/javascript" src="/web/static/src/js/chrome/abstract_web_client.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/chrome/web_client.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/chrome/root_widget.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/_deprecated/data.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/core/context.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/core/data_comparison_utils.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/core/math_utils.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/core/misc.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/services/crash_manager_service.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/services/data_manager.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/services/report_service.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/services/session.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/widgets/change_password.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/tools/test_menus_loader.js"/>
+            <script type="text/javascript" src="/web/static/src/js/tools/debug_manager_backend.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/tools/tools.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/env.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/owl_compatibility.js"></script>
         </xpath>
         <xpath expr="//t[@t-raw='0']" position="replace">
             <div id="wrapwrap" t-attf-class="#{pageName or ''}">
