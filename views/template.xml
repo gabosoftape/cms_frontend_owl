@@ -9,6 +9,8 @@
             <t t-call-assets="web.assets_frontend" t-js="false"/>
         </xpath>
         <xpath expr="//head/script" position="after">
+            <t t-call-assets="web.assets_common" t-css="false" defer_load="True"/>
+            <t t-call-assets="web.assets_frontend" t-css="false" defer_load="True"/>
             <script type="text/javascript" src="/web/static/src/js/chrome/abstract_action.js"></script>
             <script type="text/javascript" src="/web/static/src/js/owl_compatibility.js"></script>
             <t t-call-assets="web.assets_common_minimal_js" t-css="false" defer_load="True"/>
