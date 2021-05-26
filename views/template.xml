@@ -14,6 +14,7 @@
             <t t-call="web.conditional_assets_tests"/>
             <t t-call-assets="web.assets_common_lazy" t-css="false" lazy_load="True"/>
             <t t-call-assets="web.assets_frontend_lazy" t-css="false" lazy_load="True"/>
+            <script type="text/javascript" src="/web/static/src/js/chrome/abstract_action.js"></script>
             <script type="text/javascript" src="/web/static/src/js/owl_compatibility.js"></script>
         </xpath>
         <xpath expr="//t[@t-raw='0']" position="replace">
