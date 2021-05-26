@@ -1,0 +1,16 @@
+<odoo>
+    <!-- Motion layout frontend general-->
+    <template id="cms_frontend_owl.cms_layout" name="CMS Layout">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure"/>
+                <div class="container py-5">
+                    <App></App>
+                </div>
+                <div class="oe_structure"/>
+            </div>
+        </t>
+    </template>
+
+
+</odoo>
