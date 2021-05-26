@@ -1,7 +1,7 @@
 <odoo>
-    <!-- Motion layout frontend general-->
     <template id="cms_frontend_owl.cms_layout" name="CMS Layout">
         <t t-call="website.layout">
+            <t t-set="x_icon" t-value="favicon"/>
             <div id="wrap">
                 <div class="oe_structure"/>
                 <div class="container py-5">
