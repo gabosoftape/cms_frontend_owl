@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "todoapp_owl",
+    'name': "CMS PORTAL OWL",
 
     'summary': """
         odoo owl demo""",
@@ -8,7 +8,7 @@
     'description': """
     """,
 
-    'author': "ys",
+    'author': "gabriel pabon",
     'website': "https://github.com/findsomeoneyys",
 
     # Categories can be used to filter modules in modules listing
