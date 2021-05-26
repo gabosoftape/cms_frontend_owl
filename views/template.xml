@@ -52,8 +52,7 @@
         </xpath>
     </template>
     <template id="cms_frontend_owl.cms_layout" name="CMS Layout">
-        <t t-call="portal.frontend_layout">
-            <t t-set="x_icon" t-value="favicon"/>
+        <t t-call="cms_frontend_owl.cms_frontend_layout">
             <div id="wrap">
                 <div class="oe_structure"/>
                 <div class="container py-5">
