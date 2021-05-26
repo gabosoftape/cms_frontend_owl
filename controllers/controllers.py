@@ -15,7 +15,7 @@ class TodoappOwl(http.Controller):
     #             'objects': http.request.env['todoapp-owl.todoapp-owl'].search([]),
     #         })
 
-    @http.route('/todoapp/', auth='public')
+    @http.route('/todoapp/', auth='user')
     def object(self, **kw):
         return http.request.render('cms_frontend_owl.cms_layout', {
             'x_icon': "cms_frontend_owl/static/src/ico/favicon.ico",
