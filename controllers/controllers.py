@@ -17,5 +17,5 @@ class TodoappOwl(http.Controller):
     @http.route('/todoapp/', auth='public')
     def object(self, **kw):
         return http.request.render('cms_frontend_owl.cms_layout', {
-            'home': "obj"
+            'x_icon': "cms_frontend_owl/static/src/ico/favicon.ico"
         })
